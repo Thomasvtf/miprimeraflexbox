@@ -1,87 +1,166 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mi primer maqueta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        .caja1{
-            height: 100px;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .caja1 {
+            min-height: 100px;
             background-color: #000582;
         }
-        .caja2{
-            width: ;
+
+        .caja2 {
             height: 300px;
             background-color: #005782;
         }
-        .caja3{
-            height: 300px;
+
+        .caja3 {
+            min-height: 300px;
             background-color: #0DABF7;
+            color: white;
+            padding: 20px;
         }
-        .caja4{
-            height: 300px;
+
+        .caja4 {
+            min-height: 300px;
             background-color: #48A8D7;
+            color: white;
+            padding: 20px;
         }
-        .caja5{
-            height: 300px;
+
+        .caja5 {
+            min-height: 300px;
             background-color: #363AA1;
+            color: white;
+            padding: 20px;
         }
-        .caja6{
-            height: 300px;
+
+        .caja6 {
+            min-height: 300px;
             background-color: #4A50E1;
+            color: white;
+            padding: 20px;
         }
-        .caja7{
-            height: 300px;
+
+        .caja7 {
+            min-height: 300px;
             background-color: #AAADFF;
+            color: black;
+            padding: 20px;
         }
-        .caja8{
-            height: 300px;
+
+        .caja8 {
+            min-height: 300px;
             background-color: #825800;
+            color: white;
         }
-        .caja9{
-            height: 300px;
+
+        .caja9 {
+            min-height: 300px;
             background-color: #D7AA48;
+            color: black;
+            padding: 20px;
         }
-        .caja10{
-            height: 300px;
+
+        .caja10 {
+            min-height: 300px;
             background-color: #FFE4AA;
+            color: black;
+            padding: 20px;
+        }
+
+        /* Ajuste para que los botones no se rompan */
+        .btn-outline-info {
+            display: flex !important;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
-  <body>
+
+<body>
     <div class="container-fluid">
         <div class="row">
-            <nav class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex p-4 justify-content-center gap-4 caja1">
-                <a class="btn btn-outline-info" href="#" role="button"> Estructura y Sintaxis
+
+            <nav class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex p-4 justify-content-center flex-wrap gap-4 caja1">
+                <a class="btn btn-outline-info" href="#tema1" role="button"> Estructura y Sintaxis
                     <img src="/img/icono_ Estructura_sintaxis.webp" alt="icono estructura y sintaxis" width="40px">
                 </a>
-                <a class="btn btn-outline-info" href="#" role="button">Niveles de Especificidad
-                    <img src="/img/Icono_Niveles_de_Especificidad.webp" alt="icono estructura y sintaxis" width="40px">
+                <a class="btn btn-outline-info" href="#tema2" role="button">Niveles de Especificidad
+                    <img src="/img/Icono_Niveles_de_Especificidad.webp" alt="icono especificidad" width="40px">
                 </a>
-                <a class="btn btn-outline-info" href="#" role="button">Pseudo Clases y Pseudo Elementos
-                    <img src="/img/Icono_Pseudo_Clases_y_Pseudo_Elementos.webp" alt="icono estructura y sintaxis" width="40px">
+                <a class="btn btn-outline-info" href="#tema3" role="button">Pseudo Clases y Elementos
+                    <img src="/img/Icono_Pseudo_Clases_y_Pseudo_Elementos.webp" alt="icono pseudo" width="40px">
                 </a>
-                <a class="btn btn-outline-info" href="#" role="button">Box Model
-                    <img src="/img/Icono_Box_Model.webp" alt="icono estructura y sintaxis" width="40px">
+                <a class="btn btn-outline-info" href="#tema4" role="button">Box Model
+                    <img src="/img/Icono_Box_Model.webp" alt="icono box model" width="40px">
                 </a>
             </nav>
-            <header class=" col-12 col-sm-12 col-md-10 col-lg-10 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center caja2">
-                <img src="/img/header.webp" alt="cabecera" height="100%">
+            <header class=" col-12 col-sm-12 col-md-10 col-lg-10 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center p-0 caja2">
+                <img src="/img/header.webp" alt="cabecera" width="100%" height="100%" style="object-fit: cover;">
             </header>
-            <aside class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja3">
-                
+            <aside id="tema1" class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja3">
+                <h4>1. Estructura y Sintaxis</h4>
+                <p>Es la forma en que le damos órdenes al navegador para que ponga las cosas bonitas. Funciona con reglas:</p>
+                <ul>
+                    <li><strong>Selector:</strong> A quién le aplicamos el cambio (ej. h1, p, .clase).</li>
+                    <li><strong>Llaves { }:</strong> Adentro va nuestro bloque de código.</li>
+                    <li><strong>Propiedad y Valor:</strong> Lo que cambiamos y cómo queda (ej. color: red;).</li>
+                </ul>
             </aside>
-            <section class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja4">caja</section>
-            <aside class=" col-6 col-sm-6 col-md-10 col-lg-10 col-xl-4 col-xxl-4 caja5">caja</aside>
+            <section class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja4 d-flex p-1 align-items-center justify-content-center">
+                <img src="/img/estructura.webp" alt="Estructura CSS" width="100%">
+            </section>
+            <aside id="tema2" class=" col-6 col-sm-6 col-md-10 col-lg-10 col-xl-4 col-xxl-4 caja5">
+                <h4>2. Niveles de Especificidad</h4>
+                <p>Cuando dos estilos pelean, el navegador usa puntos para decidir quién gana:</p>
+                <ol>
+                    <li><strong>Etiquetas (p, div):</strong> Más débiles (1 punto).</li>
+                    <li><strong>Clases (.boton):</strong> Ganan a etiquetas (10 puntos).</li>
+                    <li><strong>IDs (#menu):</strong> Pesos pesados (100 puntos).</li>
+                    <li><strong>En línea (style=""):</strong> Casi siempre ganan (1000 puntos).</li>
+                </ol>
+            </aside>
+            <section id="tema3" class=" col-6 col-sm-6 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja6">
+                <h4>3. Pseudo-clases (:)</h4>
+                <p>Son para cuando el elemento cambia de estado:</p>
+                <ul>
+                    <li><strong>:hover</strong> (cuando le pasas el mouse por encima).</li>
+                    <li><strong>:active</strong> (para cuando le das clic).</li>
+                </ul>
+            </section>
+            <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja7">
+                <h4>Pseudo-elementos (::)</h4>
+                <p>Modifican solo una partecita o inyectan contenido:</p>
+                <ul>
+                    <li><strong>::before</strong> (agrega cosas antes).</li>
+                    <li><strong>::after</strong> (agrega cosas después).</li>
+                </ul>
+            </section>
+            
+            <section id="tema4" class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8 d-flex p-1 align-items-center justify-content-center">
+                <img src="/img/capas_box.webp" alt="Las 4 Capas del Box Model" width="100%" height="100%" >
+            </section>
 
-            <section class=" col-6 col-sm-6 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja6">caja</section>
-            <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja7">caja</section>
-            <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8">caja</section>
-            <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja9">caja</section>
-            <footer class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja10">caja</footer>
+            <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja9">
+                <h4>4. Box Model</h4>
+                <p>En CSS debes imaginarte que absolutamente TODO es una caja cuadrada. Tiene 4 capas que definen su tamaño y espacio.</p>
+            </section>
+            
+            <footer class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja10">
+                <h4>SENA Cenigraf</h4>
+                <p>Programa ADSO</p>
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
