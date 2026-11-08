@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mi primer maqueta</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         html {
             scroll-behavior: smooth;
@@ -17,7 +18,7 @@
         }
 
         .caja2 {
-            height: 300px;
+            min-height: 300px;
             background-color: #005782;
         }
 
@@ -76,11 +77,15 @@
             padding: 20px;
         }
 
-        /* Ajuste para que los botones no se rompan */
-        .btn-outline-info {
-            display: flex !important;
+        .botones {
+            margin: 15px;
+        }
+
+        .contenedor-botones {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
             align-items: center;
-            gap: 10px;
         }
     </style>
 </head>
@@ -88,34 +93,55 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-
-            <nav class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex p-4 justify-content-center flex-wrap gap-4 caja1">
-                <a class="btn btn-outline-info" href="index.html" role="button"> Estructura y Sintaxis
-                    <img src="./img/icono_ Estructura_sintaxis.webp" alt="icono estructura y sintaxis" width="40px">
-                </a>
-                <a class="btn btn-outline-info" href="#tema2" role="button">Niveles de Especificidad
-                    <img src="./img/Icono_Niveles_de_Especificidad.webp" alt="icono especificidad" width="40px">
-                </a>
-                <a class="btn btn-outline-info" href="pseudo.html" role="button">Pseudo Clases y Elementos
-                    <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos.webp" alt="icono pseudo" width="40px">
-                </a>
-                <a class="btn btn-outline-info" href="#tema4" role="button">Box Model
-                    <img src="./img/Icono_Box_Model.webp" alt="icono box model" width="40px">
-                </a>
+            <nav class="navbar navbar-expand-xl p-3 caja1">
+                <h1 class="m-2" style="color: aliceblue; width: 500px;"><img src="./img/psudoclases.webp" width="100px"
+                        alt="">Pseudo
+                    Clases</h1>
+                <div class="container-fluid justify-content-start">
+                    <button class="navbar-toggler bg-light my-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuCSS" aria-control="menuCSS" aria-expanded="false"
+                        aria-label="abrir menu"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-start flex-wrap gap-2 my-2 " id="menuCSS">
+                        <div class="botones d-flex gap-4 justify-content-start align-items-right">
+                            <div class="contenedor-botones flex-wrap" id="menuNav">
+                                <a href="index.html" class="btn btn-outline-info">
+                                    Estructura y Sintaxis
+                                    <img src="./img/icono_ Estructura_sintaxis.webp" alt="icono" width="30px">
+                                </a>
+                                <a href="#" class="btn btn-outline-info">
+                                    Niveles de Especificidad
+                                    <img src="./img/Icono_Niveles_de_Especificidad.webp" alt="icono" width="30px">
+                                </a>
+                                <a href="pseudo.html" class="btn btn-outline-info">
+                                    Pseudo Clases y Elementos
+                                    <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos.webp" alt="icono"
+                                        width="30px">
+                                </a>
+                                <a href="#" class="btn btn-outline-info">
+                                    Box Model
+                                    <img src="./img/Icono_Box_Model.webp" alt="icono" width="30px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <header class=" col-12 col-sm-12 col-md-10 col-lg-10 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center p-0 caja2">
+            <header
+                class=" col-12 col-sm-12 col-md-10 col-lg-10 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center p-0 caja2">
                 <img src="./img/header.webp" alt="cabecera" width="100%" height="100%" style="object-fit: cover;">
             </header>
             <aside id="tema1" class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja3">
                 <h4>1. Estructura y Sintaxis</h4>
-                <p>Es la forma en que le damos órdenes al navegador para que ponga las cosas bonitas. Funciona con reglas:</p>
+                <p>Es la forma en que le damos órdenes al navegador para que ponga las cosas bonitas. Funciona con
+                    reglas:</p>
                 <ul>
                     <li><strong>Selector:</strong> A quién le aplicamos el cambio (ej. h1, p, .clase).</li>
                     <li><strong>Llaves { }:</strong> Adentro va nuestro bloque de código.</li>
                     <li><strong>Propiedad y Valor:</strong> Lo que cambiamos y cómo queda (ej. color: red;).</li>
                 </ul>
             </aside>
-            <section class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja4 d-flex p-1 align-items-center justify-content-center">
+            <section
+                class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja4 d-flex p-1 align-items-center justify-content-center">
                 <img src="./img/estructura.webp" alt="Estructura CSS" width="100%">
             </section>
             <aside id="tema2" class=" col-6 col-sm-6 col-md-10 col-lg-10 col-xl-4 col-xxl-4 caja5">
@@ -144,23 +170,27 @@
                     <li><strong>::after</strong> (agrega cosas después).</li>
                 </ul>
             </section>
-            
-            <section id="tema4" class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8 d-flex p-1 align-items-center justify-content-center">
-                <img src="./img/capas_box.webp" alt="Las 4 Capas del Box Model" width="100%" height="100%" >
+
+            <section id="tema4"
+                class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8 d-flex p-1 align-items-center justify-content-center">
+                <img src="./img/capas_box.webp" alt="Las 4 Capas del Box Model" width="100%" height="100%">
             </section>
 
             <section class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja9">
                 <h4>4. Box Model</h4>
-                <p>En CSS debes imaginarte que absolutamente TODO es una caja cuadrada. Tiene 4 capas que definen su tamaño y espacio.</p>
+                <p>En CSS debes imaginarte que absolutamente TODO es una caja cuadrada. Tiene 4 capas que definen su
+                    tamaño y espacio.</p>
             </section>
-            
+
             <footer class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja10">
                 <h4>SENA Cenigraf</h4>
                 <p>Programa ADSO</p>
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

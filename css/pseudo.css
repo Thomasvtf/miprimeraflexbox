@@ -19,7 +19,7 @@
             background-color: #412F91;
         }
 
-        @media (min-width: 768px) and (max-width: 1032px) {
+        @media (min-width: 768px) and (max-width: 1200px) {
             .caja4 {
                 display: none;
             }
@@ -117,17 +117,6 @@
 
         .botones {
             margin: 15px;
-        }
-
-        .btn-hamburguesa {
-            display: none;
-            background: transparent;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            font-size: 1.5rem;
-            padding: 4px 10px;
-            border-radius: 4px;
-            cursor: pointer;
         }
 
         .contenedor-botones {
