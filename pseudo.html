@@ -7,78 +7,7 @@
     <title>Pseudo Clases</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <style>
-     
-        .caja1 {
-            min-height: 100px;
-            background-color: #140d32;
-        }
-
-        .caja2 {
-            max-height: 300px;
-            background-color: #1D2659;
-        }
-
-        @media  (min-width:768px) and (max-width:992){
-            .caja2-img {
-                
-            }
-        }
-
-        .caja3 {
-            max-height: 300px;
-            background-color: #1D3959;
-        }
-
-        .caja4 {
-            max-height: 300px;
-            background-color: #412F91;
-        }
-
-        .caja5 {
-            height: 300px;
-            background-color: #2F8E66;
-        }
-
-        .caja6 {
-            height: 300px;
-            background-color: #13A456;
-        }
-
-        .caja7 {
-            height: 300px;
-            background-color: #45BF5F;
-        }
-
-        .caja8 {
-            height: 300px;
-            background-color: #13B11F;
-        }
-
-         .caja9 {
-            height: 300px;
-            background-color: #2F8E66;
-        }
-
-        .caja10 {
-            height: 300px;
-            background-color: #13A456;
-        }
-
-        .caja11 {
-            height: 300px;
-            background-color: #45BF5F;
-        }
-
-        .caja8 {
-            height: 300px;
-            background-color: #13B11F;
-        }
-        .botones {
-            margin: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/pseudo.css">
 </head>
 
 <body>
@@ -88,48 +17,213 @@
                 <h1 class="m-2" style="color: aliceblue;"><img src="./img/psudoclases.webp" width="100px" alt="">Pseudo
                     Clases</h1>
                 <div class="botones d-flex gap-4 justify-content-center align-items-center">
-                    <a href="#" class="btn btn-light " style="color: #281D59;">Boton 1</a>
-                    <a href="#" class="btn btn-light " style="color: #281D59;">Boton 2</a>
-                    <a href="#" class="btn btn-light " style="color: #281D59;">Boton 3</a>
-                    <a href="#" class="btn btn-light " style="color: #281D59;">Boton 4</a>
-                </div>
+                    <div class="contenedor-botones" id="menuNav">
+                        <a href="index.html" class="btn btn-light" style="color: #281D59;">
+                            Estructura y Sintaxis
+                            <img src="./img/icono_ Estructura_sintaxis2.webp" alt="icono" width="30px">
+                        </a>
+                        <a href="#" class="btn btn-light" style="color: #281D59;">
+                            Niveles de Especificidad
+                            <img src="./img/Icono_Niveles_de_Especificidad2.webp" alt="icono" width="30px">
+                        </a>
+                        <a href="#" class="btn btn-light" style="color: #281D59;">
+                            Pseudo Clases y Elementos
+                            <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos2.webp" alt="icono" width="30px">
+                        </a>
+                        <a href="#" class="btn btn-light" style="color: #281D59;">
+                            Box Model
+                            <img src="./img/Icono_Box_Model2.webp" alt="icono" width="30px">
+                        </a>
+                    </div>
             </nav>
             <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja2">
                 <img src="./img/header_pseudo.jpg" alt="" height="100%" width="100%">
             </header>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja3">
                 <h1 style="color: #14c62e;">¿Qué es una pseudoclase CSS?</h1>
-                <p style="color: aliceblue;">Las pseudoclases se utilizan para hacer referencia a elementos HTML que tengan un cierto
+                <p style="color: aliceblue;">Las pseudoclases se utilizan para hacer referencia a elementos HTML que
+                    tengan un cierto
                     comportamiento concreto. Volvamos a recordar el esquema general de sintaxis de CSS, donde ahora
                     añadiremos las pseudoclases, que se definen añadiendo dos puntos antes del nombre de la pseudoclase
                     concreta, de la siguiente forma:</p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-2 caja4">
-                <img src="./img/sintaxis-pseudoclases.png" width="100%" alt="">
+                <img src="./img/sintaxis-pseudoclases.png" width="100%" alt="" class="imagen-oculta">
             </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja5"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja6"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja7"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja9"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja10"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja11"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja12"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja13"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja14"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja15"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja16"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja17"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja18"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja19"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja20"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja21"></div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja22"></div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja5">
+                <strong style="color: #281D59;">:hover</strong>
+                <p>Se activa cuando el usuario pasa el puntero del mouse sobre un elemento.</p>
+                <div class="caja-ej">
+                    <button class="hover">Pasa el mouse</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja6">
+                <strong style="color: #281D59;">:active</strong>
+                <p>Se aplica en el instante exacto en que un elemento es cliqueado o presionado.</p>
+                <div class="caja-ej">
+                    <button class="active">Manten presionado</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja7">
+                <strong style="color: #281D59;">:focus</strong>
+                <p>Se activa cuando el elemento recibe el foco (tecla Tab o clic en un campo).</p>
+                <div class="caja-ej">
+                    <input type="text" class="input" placeholder="Haz clic aquí...">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja8">
+                <strong style="color: #281D59;">:focus-within</strong>
+                <p>Se aplica a un contenedor si él mismo o cualquiera de sus hijos tiene el foco.</p>
+                <div class="caja-ej">
+                    <div class="within-container">
+                        <input type="text" class="input" placeholder="Escribe aquí...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja9">
+                <strong style="color: #281D59;">:visited</strong>
+                <p>Aplica estilos a enlaces que el navegador registra como ya visitados.</p>
+                <div class="caja-ej">
+                    <a href="https://www.google.com" target="_blank" class="visited">Enlace a Google</a>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja10">
+                <strong style="color: #281D59;">:target</strong>
+                <p>Selecciona el elemento cuyo id coincide con el ancla (#id) actual en la URL.</p>
+                <div class="caja-ej">
+                    <a href="#tarjeta-10"
+                        style="color: #14c62e; background-color: #1e1b4b; padding: 6px; border-radius: 5px; font-size: 0.8rem;">Activar
+                        #target</a>
+                    <div id="tarjeta-10" class="target-box mt-1">¡Elemento Objetivo!</div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja11">
+                <strong style="color: #281D59;">:first-child</strong>
+                <p>Selecciona el elemento si es el primer hijo dentro de su contenedor padre.</p>
+                <div class="caja-ej">
+                    <ul class="list first-child">
+                        <li>Item 1 (Primer hijo)</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja12">
+                <strong style="color: #281D59;">:last-child</strong>
+                <p>Selecciona el elemento si es el último hijo dentro de su contenedor padre.</p>
+                <div class="caja-ej">
+                    <ul class="list last-child">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3 (Último hijo)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja13">
+                <strong style="color: #281D59;">:nth-child(even)</strong>
+                <p>Selecciona elementos según su posición (ej: even para posiciones pares).</p>
+                <div class="caja-ej">
+                    <ul class="list nth-child">
+                        <li>Item 1</li>
+                        <li>Item 2 (Par)</li>
+                        <li>Item 3</li>
+                        <li>Item 4 (Par)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja14">
+                <strong style="color: #281D59;">:nth-of-type(2)</strong>
+                <p>Funciona igual que :nth-child, pero filtra únicamente por el mismo tipo de etiqueta.</p>
+                <div class="caja-ej nth-type" style="font-size: 0.8rem;">
+                    <span>Spans ignorados</span>
+                    <p class="m-0">Párrafo 1</p>
+                    <p class="m-0">Párrafo 2 (2º &lt;p&gt;)</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja15">
+                <strong style="color: #281D59;">::before</strong>
+                <p>Inserta contenido visual antes del contenido real del elemento.</p>
+                <div class="caja-ej">
+                    <span class="before">Contenido</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja16">
+                <strong style="color: #281D59;">::after</strong>
+                <p>Inserta contenido o decoraciones después del contenido del elemento.</p>
+                <div class="caja-ej">
+                    <span class="after">Contenido</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja17">
+                <strong style="color: #281D59;">::placeholder</strong>
+                <p>Permite personalizar el texto de sugerencia dentro de campos input.</p>
+                <div class="caja-ej">
+                    <input type="text" class="input ph" placeholder="Texto...">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja18">
+                <strong style="color: #281D59;">::selection</strong>
+                <p>Modifica el estilo al resaltar o seleccionar texto con el cursor.</p>
+                <div class="caja-ej">
+                    <p class="select m-0">¡Seleccióname con el mouse!</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja19">
+                <strong style="color: #281D59;">::first-letter</strong>
+                <p>Aplica estilos exclusivamente a la primera letra de un bloque de texto.</p>
+                <div class="caja-ej">
+                    <p class="letter m-0">CSS Fácil.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja20">
+                <strong style="color: #281D59;">::first-line</strong>
+                <p>Aplica estilos únicamente a la primera línea visible de un párrafo.</p>
+                <div class="caja-ej">
+                    <p class="line m-0">
+                        Primera línea destacada.<br>Segunda línea normal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-2 caja21">
+                <strong style="color: #281D59;">::marker</strong>
+                <p>Permite dar estilo directo al símbolo de viñeta en elementos de lista (li).</p>
+                <div class="caja-ej">
+                    <ul class="marker text-start m-0">
+                        <li>Viñeta morada</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 p-3 caja22">
+                <strong style="color: #281D59;">::file-selector-button</strong>
+                <p>Personaliza el botón nativo de selección de archivos en inputs de tipo file.</p>
+                <div class="caja-ej">
+                    <input type="file" class="file-input">
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
