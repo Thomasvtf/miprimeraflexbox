@@ -70,13 +70,55 @@
             height: 300px;
         }
 
+        .botones {
+            margin: 15px;
+        }
 
+        .contenedor-botones {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
+            <nav class="navbar navbar-expand-xl p-3 caja1">
+                <div class="d-flex align-items-center">
+                    <img src="./img/logo_especificidad.webp" width="100px" class="imagen" alt="">
+                    <h1 style="color: aliceblue;" class="m-0 ms-2">Niveles de Especificidad</h1>
+                </div>
+                <div class="container-fluid justify-content-start">
+                    <button class="navbar-toggler bg-light my-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuCSS" aria-control="menuCSS" aria-expanded="false"
+                        aria-label="abrir menu"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-start flex-wrap gap-2 my-2 " id="menuCSS">
+                        <div class="botones d-flex gap-4 justify-content-start align-items-right">
+                            <div class="contenedor-botones flex-wrap" id="menuNav">
+                                <a href="index.html" class="btn btn-outline-light">
+                                    Estructura y Sintaxis
+                                    <img src="./img/icono_ Estructura_sintaxis2.webp" alt="icono" width="30px">
+                                </a>
+                                <a href="#" class="btn btn-light" style="border: solid 1px white;">
+                                    Niveles de Especificidad
+                                    <img src="./img/Icono_Niveles_de_Especificidad2.webp" alt="icono" width="30px">
+                                </a>
+                                <a href="pseudo.html" class="btn btn-outline-light">
+                                    Pseudo Clases y Elementos
+                                    <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos2.webp" alt="icono"
+                                        width="30px">
+                                </a>
+                                <a href="#" class="btn btn-outline-light">
+                                    Box Model
+                                    <img src="./img/Icono_Box_Model2.webp" alt="icono" width="30px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja2"></header>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja3"></div>
