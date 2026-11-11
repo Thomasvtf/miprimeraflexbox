@@ -16,7 +16,7 @@
 
         .caja2 {
             background-color: #6366F1;
-            height: 300px;
+            max-height: 300px;
         }
 
         .caja3 {
@@ -120,16 +120,77 @@
                     </div>
                 </div>
             </nav>
-            <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja2"></header>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja3"></div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja4"></div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja5"></div>
-            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-6 col-xxl-6 caja6"></div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 caja7"></div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja8"></div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja9"></div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja10"></div>
-            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja11"></div>
+            <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja2">
+                <img src="./img/header_especificidad.webp" alt="" height="100%" width="100%">
+            </header>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja3 p-3 overflow-auto">
+                <h4 class="mb-2">¿Qué es la Especificidad?</h4>
+                <p class="mb-2">Sistema que usa el navegador para resolver conflictos cuando varias reglas CSS apuntan al mismo elemento.</p>
+                <div class="bg-dark p-2 rounded text-center my-2 border">
+                    <span class="text-info">Fórmula: [ Inline, ID, Clase, Etiqueta ]</span>
+                </div>
+                <p class="mb-0">Contador de 4 dígitos: <code style="color: #52EC3F" class="bg-dark p-1 rounded">(0, 0, 0, 0)</code></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja4">
+                <img src="./img/img-especificidad.webp" alt="" height="100%" width="100%">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja5 p-3 overflow-auto">
+                <h4 class="mb-2">Nivel 1: Etiquetas (1 Pt)</h4>
+                <p class="mb-2">Selectores más débiles. Afectan a la etiqueta directamente o a fragmentos específicos.</p>
+                <p class="mb-1"><strong>Ejemplos:</strong></p>
+                <div class="bg-dark p-2 rounded">
+                    <code style="color: #52EC3F">h1, p, div, ::before, ::after</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-6 col-xxl-6 caja6 p-3 overflow-auto">
+                <h4 class="mb-2">Nivel 2: Clases (10 Pts)</h4>
+                <p class="mb-2">Selección por grupos, estados o atributos HTML.</p>
+                <p class="mb-1"><strong>Ejemplos:</strong></p>
+                <div class="bg-dark p-2 rounded">
+                    <code style="color: #52EC3F">.mi-clase, :hover, :focus, [type="text"]</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 caja7 p-3 overflow-auto">
+                <h4 class="mb-2">Nivel 3: Identificadores / IDs (100 Pts)</h4>
+                <p class="mb-2">Selectores únicos de alta prioridad.</p>
+                <p class="mb-1"><strong>Ejemplos:</strong></p>
+                <div class="bg-dark p-2 rounded">
+                    <code style="color: #52EC3F">#header, #btn-submit, #modal-principal</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja8 p-3 overflow-auto">
+                <h4 class="mb-2">Nivel 4: Inline (1000 Pts)</h4>
+                <p class="mb-2">Estilos escritos en la etiqueta HTML mediante el atributo <code style="color: #52EC3F;">style=""</code>.</p>
+                <div class="bg-dark p-2 rounded">
+                    <code style="color: #52EC3F">&lt;p style="color: red;"&gt;</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja9 p-3 overflow-auto">
+                <h4 class="mb-2">Peso Cero (0 Pts)</h4>
+                <p class="mb-2">Elementos que afectan el flujo pero no suman puntos.</p>
+                <div class="bg-dark p-2 rounded mb-1">
+                    <code style="color: #52EC3F">* (Universal)</code>
+                </div>
+                <div class="bg-dark p-2 rounded">
+                    <code style="color: #52EC3F">>, +, ~, :where()</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja10 p-3 overflow-auto">
+                <h4 class="mb-2">Cascada y Pseudo-clases</h4>
+                <p class="mb-1"><strong>Desempate:</strong> A igual puntaje, gana la regla escrita al final.</p>
+                <p class="mb-1"><strong>:is(), :not(), :has():</strong> Toman los puntos del selector más fuerte dentro de su paréntesis.</p>
+                <div class="bg-dark p-1 rounded text-center">
+                    <code style="color: #52EC3F">:is(h1, #titulo) = 100 pts</code>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja11 p-3 overflow-auto">
+                <h4 class="mb-2">Excepción: !important</h4>
+                <p class="mb-2">Comodín que rompe la cascada y la especificidad normal.</p>
+                <div class="bg-dark p-2 rounded mb-2 border border-warning">
+                    <code style="color: #52EC3F">color: red !important;</code>
+                </div>
+                <p class="text-warning mb-0"><strong>Advertencia:</strong> Evitar en código limpio; usar solo en casos extremos.</p>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
