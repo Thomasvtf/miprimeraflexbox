@@ -9,7 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         .caja1 {
-            background-color: #06B6D4;
+            background-color: #000582;
             min-height: 147px;
             min-width: 300px;
         }
@@ -87,10 +87,8 @@
     <div class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-xl p-3 caja1">
-                <div class="d-flex align-items-center">
-                    <img src="./img/logo_especificidad.webp" width="100px" class="imagen" alt="">
-                    <h1 style="color: aliceblue;" class="m-0 ms-2">Niveles de Especificidad</h1>
-                </div>
+                <h1 class="m-2" style="color: aliceblue; width: 500px;"><img src="./img/logo_estructura_sintaxis.webp"
+                        width="100px" alt="">Css Fácil</h1>
                 <div class="container-fluid justify-content-start">
                     <button class="navbar-toggler bg-light my-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#menuCSS" aria-control="menuCSS" aria-expanded="false"
@@ -98,22 +96,22 @@
                     <div class="collapse navbar-collapse justify-content-start flex-wrap gap-2 my-2 " id="menuCSS">
                         <div class="botones d-flex gap-4 justify-content-start align-items-right">
                             <div class="contenedor-botones flex-wrap" id="menuNav">
-                                <a href="index.html" class="btn btn-outline-light">
+                                <a href="index.html" class="btn btn-outline-info">
                                     Estructura y Sintaxis
-                                    <img src="./img/icono_ Estructura_sintaxis2.webp" alt="icono" width="30px">
+                                    <img src="./img/icono_ Estructura_sintaxis.webp" alt="icono" width="30px">
                                 </a>
-                                <a href="especificidad.html" class="btn btn-light" style="border: solid 1px white;">
+                                <a href="especificidad.html" class="btn btn-info">
                                     Niveles de Especificidad
-                                    <img src="./img/Icono_Niveles_de_Especificidad2.webp" alt="icono" width="30px">
+                                    <img src="./img/Icono_Niveles_de_Especificidad.webp" alt="icono" width="30px">
                                 </a>
-                                <a href="pseudo.html" class="btn btn-outline-light">
+                                <a href="pseudo.html" class="btn btn-outline-info">
                                     Pseudo Clases y Elementos
-                                    <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos2.webp" alt="icono"
+                                    <img src="./img/Icono_Pseudo_Clases_y_Pseudo_Elementos.webp" alt="icono"
                                         width="30px">
                                 </a>
-                                <a href="box-model.html" class="btn btn-outline-light">
+                                <a href="box-model.html" class="btn btn-outline-info">
                                     Box Model
-                                    <img src="./img/Icono_Box_Model2.webp" alt="icono" width="30px">
+                                    <img src="./img/Icono_Box_Model.webp" alt="icono" width="30px">
                                 </a>
                             </div>
                         </div>
@@ -125,18 +123,21 @@
             </header>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja3 p-3 overflow-auto">
                 <h4 class="mb-2">¿Qué es la Especificidad?</h4>
-                <p class="mb-2">Sistema que usa el navegador para resolver conflictos cuando varias reglas CSS apuntan al mismo elemento.</p>
+                <p class="mb-2">Sistema que usa el navegador para resolver conflictos cuando varias reglas CSS apuntan
+                    al mismo elemento.</p>
                 <div class="bg-dark p-2 rounded text-center my-2 border">
                     <span class="text-info">Fórmula: [ Inline, ID, Clase, Etiqueta ]</span>
                 </div>
-                <p class="mb-0">Contador de 4 dígitos: <code style="color: #52EC3F" class="bg-dark p-1 rounded">(0, 0, 0, 0)</code></p>
+                <p class="mb-0">Contador de 4 dígitos: <code style="color: #52EC3F"
+                        class="bg-dark p-1 rounded">(0, 0, 0, 0)</code></p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja4">
                 <img src="./img/img-especificidad.webp" alt="" height="100%" width="100%">
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja5 p-3 overflow-auto">
                 <h4 class="mb-2">Nivel 1: Etiquetas (1 Pt)</h4>
-                <p class="mb-2">Selectores más débiles. Afectan a la etiqueta directamente o a fragmentos específicos.</p>
+                <p class="mb-2">Selectores más débiles. Afectan a la etiqueta directamente o a fragmentos específicos.
+                </p>
                 <p class="mb-1"><strong>Ejemplos:</strong></p>
                 <div class="bg-dark p-2 rounded">
                     <code style="color: #52EC3F">h1, p, div, ::before, ::after</code>
@@ -160,7 +161,8 @@
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja8 p-3 overflow-auto">
                 <h4 class="mb-2">Nivel 4: Inline (1000 Pts)</h4>
-                <p class="mb-2">Estilos escritos en la etiqueta HTML mediante el atributo <code style="color: #52EC3F;">style=""</code>.</p>
+                <p class="mb-2">Estilos escritos en la etiqueta HTML mediante el atributo <code
+                        style="color: #52EC3F;">style=""</code>.</p>
                 <div class="bg-dark p-2 rounded">
                     <code style="color: #52EC3F">&lt;p style="color: red;"&gt;</code>
                 </div>
@@ -178,7 +180,8 @@
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja10 p-3 overflow-auto">
                 <h4 class="mb-2">Cascada y Pseudo-clases</h4>
                 <p class="mb-1"><strong>Desempate:</strong> A igual puntaje, gana la regla escrita al final.</p>
-                <p class="mb-1"><strong>:is(), :not(), :has():</strong> Toman los puntos del selector más fuerte dentro de su paréntesis.</p>
+                <p class="mb-1"><strong>:is(), :not(), :has():</strong> Toman los puntos del selector más fuerte dentro
+                    de su paréntesis.</p>
                 <div class="bg-dark p-1 rounded text-center">
                     <code style="color: #52EC3F">:is(h1, #titulo) = 100 pts</code>
                 </div>
@@ -189,7 +192,8 @@
                 <div class="bg-dark p-2 rounded mb-2 border border-warning">
                     <code style="color: #52EC3F">color: red !important;</code>
                 </div>
-                <p class="text-warning mb-0"><strong>Advertencia:</strong> Evitar en código limpio; usar solo en casos extremos.</p>
+                <p class="text-warning mb-0"><strong>Advertencia:</strong> Evitar en código limpio; usar solo en casos
+                    extremos.</p>
             </div>
         </div>
     </div>
