@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -15,7 +15,6 @@
         .caja1 {
             background-color: #059669;
             min-height: 147px;
-
         }
 
         .caja2 {
@@ -133,7 +132,7 @@
                     <div class="collapse navbar-collapse justify-content-start flex-wrap gap-2 my-2 " id="menuCSS">
                         <div class="botones d-flex gap-4 justify-content-start align-items-right">
                             <div class="contenedor-botones flex-wrap" id="menuNav">
-                                <a href="index.html" class="btn btn btn-light" style="color: #0D261D;">
+                                <a href="index.html" class="btn btn-light" style="color: #0D261D;">
                                     Estructura y Sintaxis
                                     <img src="./img/icono_ Estructura_sintaxis3.webp" alt="icono" width="30px">
                                 </a>
@@ -159,9 +158,10 @@
             <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja2">
                 <img src="./img/header-box.webp" alt="" height="100%" width="100%">
             </header>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-8 col-xxl-8 caja3">
-                <h2 class="m-2" style="color: yellow;"></h2>
-                <p class="m-2" style="color: white;"></p>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-8 col-xxl-8 caja3 overflow-auto p-3">
+                <h2 class="m-2" style="color: yellow;">¿Qué es el Box Model?</h2>
+                <p class="m-2" style="color: white;">En CSS, el navegador renderiza cada elemento HTML como una caja
+                    rectangular invisible. Esta estructura determina cómo se calcula el tamaño del elemento en pantalla y cómo interactúa con los demás componentes del maquetado.</p>
             </div>
             <div
                 class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja4 d-flex justify-content-center align-items-center">
@@ -171,37 +171,45 @@
                 class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 caja5 d-flex justify-content-center align-items-center">
                 <img src="./img/img-caja3.webp" alt="" height="100%">
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-8 col-xxl-8 caja6">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-8 col-xxl-8 caja6 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">Anatomía de la Caja</h2>
+                <p style="color: white;" class="m-2">Cálculo del tamaño total en pantalla de un elemento:<br>
+                <code>Ancho Total = width + padding + border + margin</code><br>
+                <code>Alto Total = height + padding + border + margin</code></p>
             </div>
-            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja7">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja7 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">1. Content (Contenido)</h2>
+                <p style="color: white;" class="m-2">El núcleo donde vive el texto, imágenes o elementos hijos.<br>
+                <strong>Propiedades:</strong> <code>width</code>, <code>height</code>, <code>max-width</code>, <code>min-height</code>.</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja8">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 caja8 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">2. Padding (Relleno)</h2>
+                <p style="color: white;" class="m-2">El espacio libre entre el contenido y el borde. Adopta el color del fondo.<br>
+                <strong>Propiedades:</strong> <code>padding</code>, <code>padding-top</code>, <code>padding-inline</code>.</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 caja9">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 caja9 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">3. Border (Borde)</h2>
+                <p style="color: white;" class="m-2">La frontera gráfica que delimita las dimensiones de la caja.<br>
+                <strong>Propiedades:</strong> <code>border-width</code>, <code>border-style</code>, <code>border-color</code>, <code>border-radius</code>.</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-12 caja10">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-12 caja10 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">4. Margin (Margen)</h2>
+                <p style="color: white;" class="m-2">El espacio transparente por fuera del borde que separa el elemento de sus vecinos.<br>
+                <strong>Propiedades:</strong> <code>margin</code>, <code>margin-top</code>, <code>margin: auto</code>.</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-3 caja11">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-3 caja11 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">box-sizing</h2>
+                <p style="color: white;" class="m-2">Define cómo se calcula el tamaño.<br>
+                <code>border-box</code> mantiene el ancho exacto absorbiendo padding y borde.</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja12">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja12 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">Colapso de Márgenes</h2>
+                <p style="color: white;" class="m-2">Los márgenes verticales adyacentes no se suman; se combinan adoptando únicamente el valor del margen mayor.</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja13">
-                <h2 style="color: yellow;"></h2>
-                <p style="color: white;"></p>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 caja13 overflow-auto p-3">
+                <h2 style="color: yellow;" class="m-2">overflow (Desbordamiento)</h2>
+                <p style="color: white;" class="m-2">Controla el contenido sobrante cuando excede el tamaño de la caja.<br>
+                <strong>Valores:</strong> <code>visible</code>, <code>hidden</code>, <code>scroll</code>, <code>auto</code>.</p>
             </div>
         </div>
     </div>
